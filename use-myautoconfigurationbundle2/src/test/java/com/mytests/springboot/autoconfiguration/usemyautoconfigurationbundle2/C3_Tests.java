@@ -31,10 +31,7 @@ public class C3_Tests {
     public void testBean4() throws Exception {
         String prop4 = environment.getProperty("myprops.prop4");
         System.out.println(prop4);
-        if (c3_bean5 == null) {
-            System.out.println("c3_bean5 is not available");
-        }
-        else{System.out.println(c3_bean5.toString());}
+        System.out.println(c3_bean5 == null ? "c3_bean5 is not available" : c3_bean5.toString());
         if(Objects.equals(prop4, "100")){
             System.out.println("myprops.prop4 = 100, c3_bean5 is available");
             Assert.assertNotNull("if myprops.prop4 = 100, c3_bean5 should be available",c3_bean5 );}

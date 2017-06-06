@@ -30,10 +30,7 @@ public class C4_Tests {
     public void testBean4() throws Exception {
         String prop5 = environment.getProperty("myprops.prop5");
         System.out.println(prop5);
-        if (c4_bean6 == null) {
-            System.out.println("c4_bean6 is not available");
-        }
-        else{System.out.println(c4_bean6.toString());}
+        System.out.println(c4_bean6 == null ? "c4_bean6 is not available" : c4_bean6.toString());
         if((Objects.equals(prop5, "prop5_value"))||(prop5==null)){
             System.out.println("myprops.prop5 = prop5_value or is not set, c4_bean6 is available");
             Assert.assertNotNull("if myprops.prop5 = prop5_value or not set, c4_bean6 should be available",c4_bean6 );}
