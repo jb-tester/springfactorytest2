@@ -1,4 +1,5 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.mytests.springBoot.autoconfiguration.myAutoConfigurationBundle2.configs.C0,\
 com.mytests.springBoot.autoconfiguration.myAutoConfigurationBundle2.configs.C1,\
 com.mytests.springBoot.autoconfiguration.myAutoConfigurationBundle2.configs.C2,\
 com.mytests.springBoot.autoconfiguration.myAutoConfigurationBundle2.configs.C3,\

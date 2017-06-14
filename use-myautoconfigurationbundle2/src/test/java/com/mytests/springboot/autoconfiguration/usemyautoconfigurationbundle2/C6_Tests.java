@@ -1,5 +1,6 @@
 package com.mytests.springboot.autoconfiguration.usemyautoconfigurationbundle2;
 
+import com.mytests.springBoot.autoconfiguration.myAutoConfigurationBundle2.beans.Bean10;
 import com.mytests.springBoot.autoconfiguration.myAutoConfigurationBundle2.beans.Bean7;
 import com.mytests.springBoot.autoconfiguration.myAutoConfigurationBundle2.beans.Bean9;
 import org.junit.Assert;
@@ -29,6 +30,8 @@ public class C6_Tests {
     @Autowired(required = false)
     private Bean9 bean9;
 
+    @Autowired(required = false)
+    private Bean10 bean10;
 
     @Test
     public void testBean7() throws Exception {
@@ -43,5 +46,14 @@ public class C6_Tests {
         System.out.println(environment.getProperty("myprops2.prop2"));
         System.out.println(bean9 == null ? "bean9 is not available" : bean9.toString());
         Assert.assertNotNull("bean9 is not available",bean9);
+    }
+
+    @Test
+    public void testBean10() throws Exception {
+        System.out.println(environment.getProperty("myprops2.prop1"));
+        System.out.println(environment.getProperty("myprops2.prop2"));
+        System.out.println(environment.getProperty("myprops2.prop3"));
+        System.out.println(bean10 == null ? "bean10 is not available" : bean10.toString());
+        Assert.assertNotNull("bean10 is not available",bean10);
     }
 }
