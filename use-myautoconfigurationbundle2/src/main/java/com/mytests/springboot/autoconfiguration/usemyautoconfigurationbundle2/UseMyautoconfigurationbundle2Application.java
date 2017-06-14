@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.ApplicationContext;
 
-@SpringBootApplication
+@SpringBootApplication//(exclude = {C0.class, C5.class})
 //@SpringBootApplication(excludeName = {"com.mytests.springBoot.autoconfiguration.myAutoConfigurationBundle2.configs.C0","com.mytests.springBoot.autoconfiguration.myAutoConfigurationBundle2.configs.C5"})
 @EnableConfigurationProperties
 public class UseMyautoconfigurationbundle2Application implements CommandLineRunner{
