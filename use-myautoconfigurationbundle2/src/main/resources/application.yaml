@@ -1,0 +1,5 @@
+#spring:
+ # autoconfigure:
+  #  exclude:
+    #       - com.mytests.springBoot.autoconfiguration.myAutoConfigurationBundle2.configs.C0
+     #      - com.mytests.springBoot.autoconfiguration.myAutoConfigurationBundle2.configs.C5
